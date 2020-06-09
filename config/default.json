@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://MitulDavid:ThisIsTemp@devcluster-si92n.mongodb.net/test?retryWrites=true"
+    "mongoURI": "mongodb://localhost:27017/",
+    "jwtSecret": "SecretKey"
 }
