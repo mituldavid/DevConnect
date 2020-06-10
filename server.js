@@ -1,7 +1,7 @@
 const express = require('express');
 const connectDB = require('./config/db');
 
-app = express();
+app = express(); //initialise express
 connectDB();
 
 //Middleware Bodyparser

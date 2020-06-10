@@ -1,3 +1,4 @@
+//checks if the token is there in the header and gives appropriate response
 const jwt = require('jsonwebtoken');
 const config = require('config');
 
