@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import Moment from 'react-moment';
 
 const ProfileExperience = ({
-  experience: { company, title, location, current, to, from, description }
+  experience: { company, title, location, current, to, from, description },
 }) => (
   <div>
-    <h3 className='text-dark'>{company}</h3>
+    <h3 className='text-light'>{company}</h3>
     <p>
       <Moment format='YYYY/MM/DD'>{from}</Moment> -{' '}
       {!to ? ' Now' : <Moment format='YYYY/MM/DD'>{to}</Moment>}
@@ -21,7 +21,7 @@ const ProfileExperience = ({
 );
 
 ProfileExperience.propTypes = {
-  experience: PropTypes.array.isRequired
+  experience: PropTypes.array.isRequired,
 };
 
 export default ProfileExperience;

@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { addEducation } from '../../actions/profile';
@@ -34,7 +34,7 @@ const AddEducation = ({ addEducation, history }) => {
     <Fragment>
       <h1 class='large text-primary'>Add Your Education</h1>
       <p class='lead'>
-        <i class='fas fa-code-branch' /> Add any school or bootcamp that you
+        <i class='fas fa-book-open'></i> Add any school or bootcamp that you
         have attended
       </p>
       <small>* = required field</small>
@@ -119,9 +119,9 @@ const AddEducation = ({ addEducation, history }) => {
           />
         </div>
         <input type='submit' class='btn btn-primary my-1' />
-        <a class='btn btn-light my-1' href='dashboard.html'>
+        <Link class='btn btn-light my-1' to='/dashboard'>
           Go Back
-        </a>
+        </Link>
       </form>
     </Fragment>
   );

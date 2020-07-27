@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import BG from '../../img/IllustrationBGS.png';
 
 const Landing = ({ isAuthenticated }) => {
   if (isAuthenticated) {
@@ -9,22 +10,20 @@ const Landing = ({ isAuthenticated }) => {
   }
   return (
     <section className='landing'>
-      <div className='dark-overlay'>
-        <div className='landing-inner'>
-          <h1 className='x-large'>Developer Connector</h1>
-          <p className='lead'>
-            Create a developer profile/portfolio, share posts and get help from
-            other developers
-          </p>
-          <div className='buttons'>
-            <Link to='/register' className='btn btn-primary'>
-              Sign Up
-            </Link>
-            <Link to='/login' className='btn btn-light'>
-              Login
-            </Link>
-          </div>
+      <div className='landing-inner'>
+        <h1 className='x-large'>DevConnect</h1>
+        <p className='lead'>A Boilerplate Social Network</p>
+        <div className='buttons'>
+          <Link to='/register' className='btn btn-primary'>
+            Sign Up
+          </Link>
+          <Link to='/login' className='btn btn-light'>
+            Login
+          </Link>
         </div>
+      </div>
+      <div className='background'>
+        <img src={BG} class='bg-img' alt='Background' />
       </div>
     </section>
   );
