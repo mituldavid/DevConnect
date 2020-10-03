@@ -12,7 +12,7 @@ const Landing = ({ isAuthenticated }) => {
     <section className='landing'>
       <div className='landing-inner'>
         <h1 className='x-large'>DevConnect</h1>
-        <p className='lead'>A Boilerplate Social Network</p>
+        <p className='lead'>A Social Network for Developers</p>
         <div className='buttons'>
           <Link to='/register' className='btn btn-primary'>
             Sign Up

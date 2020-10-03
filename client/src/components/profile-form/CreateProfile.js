@@ -103,7 +103,7 @@ const CreateProfile = ({ createProfile, history }) => {
             onChange={(e) => onChange(e)}
           />
           <small className='form-text'>
-            City & state suggested (eg. Boston, MA)
+            City & state suggested (eg. Bangalore, Chennai)
           </small>
         </div>
         <div className='form-group'>
