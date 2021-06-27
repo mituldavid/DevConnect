@@ -1,3 +1,5 @@
+![DevConnect](https://user-images.githubusercontent.com/49085834/123543738-a388f100-d76d-11eb-9395-72bac30a55c2.png)
+
 ## **About**
 
 A boilerplate social network for developers, built using the MERN stack that allows you to create a profile, add experience and education details, and make public posts.
