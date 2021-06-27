@@ -28,7 +28,7 @@ const PostItem = ({
 
       {showActions && (
         <Fragment>
-          <Link to={`/posts/${_id}`} className='btn btn-primary'>
+          <Link to={`/posts/${_id}`} className='btn badge-dark'>
             Discussion{' '}
             {comments.length > 0 && (
               <span className='comment-count'>{comments.length}</span>
@@ -37,17 +37,17 @@ const PostItem = ({
           <button
             onClick={(e) => addLike(_id)}
             type='button'
-            className='btn btn-light'
+            className='btn badge-dark'
           >
-            <i className='far fa-thumbs-up' />{' '}
+            <i className='fas fa-heart' />{' '}
             <span>{likes.length > 0 && <span>{likes.length}</span>}</span>
           </button>
           <button
             onClick={(e) => removeLike(_id)}
             type='button'
-            className='btn btn-light'
+            className='btn badge-dark'
           >
-            <i className='far fa-thumbs-down' />
+            <i className='far fa-heart' />
           </button>
 
           {!auth.loading && user === auth.user._id && (
